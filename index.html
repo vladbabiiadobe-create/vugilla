@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>Оптовий продаж вугілля | CoalTrade</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #f5f5f5;
+            color: #333;
+        }
+
+        header {
+            background: #1e1e1e;
+            color: #fff;
+            padding: 15px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 22px;
+        }
+
+        nav {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 14px;
+        }
+
+        .hero {
+            background: url("https://images.unsplash.com/photo-1581090700227-1e37b190418e") center/cover;
+            color: #fff;
+            padding: 60px 20px;
+            text-align: center;
+        }
+
+        section {
+            padding: 40px 20px;
+            background: #fff;
+            margin-bottom: 15px;
+        }
+
+        h2 {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .products {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 20px;
+        }
+
+        .card {
+            background: #fafafa;
+            border: 1px solid #ddd;
+            padding: 20px;
+            border-radius: 8px;
+            text-align: center;
+        }
+
+        .price {
+            font-size: 20px;
+            font-weight: bold;
+            margin-top: 10px;
+        }
+
+        .advantages {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+            gap: 15px;
+        }
+
+        .adv {
+            background: #f0f0f0;
+            padding: 15px;
+            border-radius: 8px;
+            text-align: center;
+        }
+
+        /* ФОРМА */
+        .form-container {
+            max-width: 500px;
+            margin: 0 auto;
+            background: #f7f7f7;
+            padding: 25px;
+            border-radius: 8px;
+        }
+
+        .form-container input,
+        .form-container textarea,
+        .form-container button {
+            width: 100%;
+            padding: 12px;
+            margin-bottom: 15px;
+            font-size: 14px;
+        }
+
+        .form-container button {
+            background: #ff9800;
+            border: none;
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        footer {
+            background: #1e1e1e;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+            font-size: 14px;
+        }
+
+        /* МОБІЛЬНА АДАПТАЦІЯ */
+        @media (max-width: 600px) {
+            header {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            nav {
+                margin-top: 10px;
+            }
+
+            .hero {
+                padding: 40px 15px;
+            }
+
+            h2 {
+                font-size: 22px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>CoalTrade</h1>
+    <nav>
+        <a href="#products">Продукція</a>
+        <a href="#about">Про нас</a>
+        <a href="#delivery">Доставка</a>
+        <a href="#form">Заявка</a>
+        <a href="#contacts">Контакти</a>
+    </nav>
+</header>
+
+<div class="hero">
+    <h2>Оптовий продаж вугілля по всій Україні</h2>
+    <p>Надійні поставки • Вигідні ціни • Великий склад</p>
+</div>
+
+<section id="products">
+    <h2>Наша продукція</h2>
+    <div class="products">
+        <div class="card">
+            <h3>Антрацит</h3>
+            <p>Максимальна теплотворність, мінімальна зольність</p>
+            <div class="price">8 500 грн / т</div>
+        </div>
+        <div class="card">
+            <h3>Вугілля ДГ</h3>
+            <p>Для котелень та промислових підприємств</p>
+            <div class="price">7 200 грн / т</div>
+        </div>
+        <div class="card">
+            <h3>Вугілля Г</h3>
+            <p>Найкраща ціна для великих обʼємів</p>
+            <div class="price">6 800 грн / т</div>
+        </div>
+    </div>
+</section>
+
+<section id="about">
+    <h2>Про компанію</h2>
+    <p>
+        CoalTrade працює з 2010 року. Ми спеціалізуємося
+        на оптових поставках вугілля для підприємств,
+        котелень та виробництв по всій Україні.
+    </p>
+</section>
+
+<section id="delivery">
+    <h2>Доставка</h2>
+    <ul>
+        <li>Автотранспорт — від 20 тонн</li>
+        <li>Залізничні поставки</li>
+        <li>Самовивіз зі складу</li>
+        <li>Швидкі терміни відвантаження</li>
+    </ul>
+</section>
+
+<section>
+    <h2>Наші переваги</h2>
+    <div class="advantages">
+        <div class="adv">Прямі постачальники</div>
+        <div class="adv">Сертифікована якість</div>
+        <div class="adv">Оптові ціни</div>
+        <div class="adv">Стабільні обʼєми</div>
+    </div>
+</section>
+
+<section id="form">
+    <h2>Залишити заявку</h2>
+    <div class="form-container">
+        <form>
+            <input type="text" placeholder="Ваше імʼя" required>
+            <input type="tel" placeholder="Телефон" required>
+            <input type="email" placeholder="Email">
+            <textarea rows="4" placeholder="Обʼєм та тип вугілля"></textarea>
+            <button type="submit">Надіслати заявку</button>
+        </form>
+    </div>
+</section>
+
+<section id="contacts">
+    <h2>Контакти</h2>
+    <p><strong>Телефон:</strong> +38 (067) 000-00-00</p>
+    <p><strong>Email:</strong> info@coaltrade.ua</p>
+    <p><strong>Адреса:</strong> м. Дніпро, вул. Промислова, 10</p>
+</section>
+
+<footer>
+    © 2025 CoalTrade. Усі права захищені.
+</footer>
+
+</body>
+</html>
